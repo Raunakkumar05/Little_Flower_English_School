@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Virtual Tour - Interactive Experience</title>
+    <link rel="stylesheet" href="front.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Particles Container -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- Main Container -->
+    <div id="main-container" class="main-container">
+        
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="main-title">
+                        School Tour
+                        <span class="year-badge">2025</span>
+                    </h1>
+                    <p class="subtitle">Immersive virtual experience of our facilities</p>
+                </div>
+
+                <!-- Add this inside header-controls div -->
+                 <div class="action-buttons">
+                    <button id="share-btn" class="action-btn" title="Share Tour">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button id="book-visit-btn" class="book-btn">Book Visit</button>
+                    
+                    <!-- NEW: Gallery Button -->
+                     <a href="gallery.html" class="action-btn" title="View Gallery">
+                        <i class="fas fa-images"></i> Gallery
+                    </a>
+                </div>
+                
+                
+                <!-- Enhanced Controls -->
+                <div class="header-controls">
+                    <div class="view-mode-selector">
+                        <button id="carousel-btn" class="view-btn active">Carousel</button>
+                        <button id="grid-btn" class="view-btn">Grid</button>
+                        <button id="list-btn" class="view-btn">List</button>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button id="share-btn" class="action-btn" title="Share Tour">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                        <button id="book-visit-btn" class="book-btn">Book Visit</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Live Stats -->
+            <div class="live-stats">
+                <div class="stat-item">
+                    <i class="fas fa-eye"></i>
+                    <span id="view-count">1,247 views</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <span id="like-count">0 likes</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <span>Premium Tour</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Carousel View -->
+            <div id="carousel-view" class="view-container active">
+                <div class="carousel-container">
+                    <div id="carousel-slides" class="carousel-slides">
+                        <!-- Slides will be dynamically generated -->
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button id="prev-btn" class="nav-arrow prev-arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next-btn" class="nav-arrow next-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Media Controls -->
+                    <div class="media-controls">
+                        <button id="play-pause-btn" class="media-btn">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                        <button id="mute-btn" class="media-btn">
+                            <i class="fas fa-volume-mute"></i>
+                        </button>
+                        <button id="fullscreen-btn" class="media-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Thumbnail Navigation -->
+                <div id="thumbnail-nav" class="thumbnail-nav">
+                    <!-- Thumbnails will be dynamically generated -->
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div id="progress-bar" class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid View -->
+            <div id="grid-view" class="view-container grid-container">
+                <!-- Grid items will be dynamically generated -->
+            </div>
+
+            <!-- List View -->
+            <div id="list-view" class="view-container list-container">
+                <!-- List items will be dynamically generated -->
+            </div>
+        </main>
+
+        <!-- School Stats Section -->
+        <section class="school-stats">
+            <div class="stats-header">
+                <h3>School at a Glance</h3>
+                <p>Excellence in education since 2010</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users stat-icon"></i>
+                    <div class="stat-number counter">1200+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-map-marker-alt stat-icon"></i>
+                    <div class="stat-number counter">50+</div>
+                    <div class="stat-label">Facilities</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock stat-icon"></i>
+                    <div class="stat-number counter">15+</div>
+                    <div class="stat-label">Years Excellence</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star stat-icon"></i>
+                    <div class="stat-number counter">4.9</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Features Section -->
+        <section class="features-section">
+            <div class="features-header">
+                <h3>Tour Features</h3>
+                <p>Experience our school like never before</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>360° Virtual Tours</h4>
+                    <p>Immersive virtual reality experience of our key facilities with interactive hotspots and detailed information.</p>
+                    <ul class="feature-list">
+                        <li>• Interactive hotspots</li>
+                        <li>• 4K resolution imagery</li>
+                        <li>• Mobile VR compatible</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Interactive Elements</h4>
+                    <p>Like your favorite spaces, share the tour with friends, and bookmark areas for future visits.</p>
+                    <ul class="feature-list">
+                        <li>• Like & favorite system</li>
+                        <li>• Social sharing</li>
+                        <li>• Personal bookmarks</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4>Book Physical Tours</h4>
+                    <p>Schedule in-person visits, meet with faculty, and experience our facilities firsthand.</p>
+                    <ul class="feature-list">
+                        <li>• Online scheduling</li>
+                        <li>• Guided tours available</li>
+                        <li>• Meet the faculty</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h4>Multiple View Modes</h4>
+                    <p>Switch between carousel, grid, and list views for the perfect browsing experience on any device.</p>
+                    <ul class="feature-list">
+                        <li>• Carousel presentation</li>
+                        <li>• Grid gallery view</li>
+                        <li>• Detailed list view</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h4>Smart Features</h4>
+                    <p>Auto-play tours, fullscreen mode, sound controls, and live visitor statistics for an enhanced experience.</p>
+                    <ul class="feature-list">
+                        <li>• Auto-play functionality</li>
+                        <li>• Fullscreen immersion</li>
+                        <li>• Live visitor stats</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Premium Experience</h4>
+                    <p>High-quality imagery, smooth animations, and professional presentation showcase our commitment to excellence.</p>
+                    <ul class="feature-list">
+                        <li>• HD image quality</li>
+                        <li>• Smooth animations</li>
+                        <li>• Professional design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-main">Welcome to our school - Where learning comes alive!</p>
+                <div class="footer-details">
+                    <span>© 2025 School Virtual Tour</span>
+                    <span>•</span>
+                    <span>Interactive Experience</span>
+                    <span>•</span>
+                    <span>Premium Quality</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Book a Physical Tour</h3>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" id="cancel-booking" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="home.js"></script>
+</body>
+</html>
