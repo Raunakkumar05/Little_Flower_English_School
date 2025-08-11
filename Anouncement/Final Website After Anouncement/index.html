@@ -266,6 +266,852 @@
             </div>
         </footer>
     </div>
+    <!-- Announcements/Notice Board Section -->
+<section class="announcements-section">
+    <div class="announcements-header">
+        <h3>
+            <i class="fas fa-bullhorn"></i>
+            School Announcements
+        </h3>
+        <p>Stay updated with the latest news and events at Little Flower English School</p>
+        <div class="announcements-controls">
+            <button id="view-all-btn" class="view-all-btn">View All</button>
+            <button id="filter-btn" class="filter-btn" title="Filter announcements">
+                <i class="fas fa-filter"></i>
+            </button>
+        </div>
+    </div>
+    
+    <div class="announcements-container">
+        <div class="announcements-grid" id="announcements-grid">
+            <!-- Recent/Important Announcements -->
+            <div class="announcement-card priority-high">
+                <div class="announcement-header">
+                    <div class="announcement-badge urgent">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Urgent
+                    </div>
+                    <span class="announcement-date">Today</span>
+                </div>
+                <h4 class="announcement-title">School Reopening After Winter Break</h4>
+                <p class="announcement-content">
+                    Classes will resume on January 15th, 2025. All students are required to report by 8:00 AM. New health protocols will be in effect.
+                </p>
+                <div class="announcement-footer">
+                    <span class="announcement-category">
+                        <i class="fas fa-graduation-cap"></i>
+                        Academic
+                    </span>
+                    <button class="expand-btn" data-announcement="1">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="announcement-expanded" id="expanded-1" style="display: none;">
+                    <div class="expanded-content">
+                        <h5>Additional Details:</h5>
+                        <ul>
+                            <li>Temperature checks will be conducted at the gate</li>
+                            <li>Students must bring updated health certificates</li>
+                            <li>New semester books are available at the school store</li>
+                            <li>Parent-teacher meetings scheduled for January 20th</li>
+                        </ul>
+                        <p><strong>Contact:</strong> principal@littleflower.edu for any queries</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcement-card priority-medium">
+                <div class="announcement-header">
+                    <div class="announcement-badge important">
+                        <i class="fas fa-star"></i>
+                        Important
+                    </div>
+                    <span class="announcement-date">2 days ago</span>
+                </div>
+                <h4 class="announcement-title">Annual Sports Day Registration Open</h4>
+                <p class="announcement-content">
+                    Registration for Annual Sports Day 2025 is now open. Students can register for various events until January 20th.
+                </p>
+                <div class="announcement-footer">
+                    <span class="announcement-category">
+                        <i class="fas fa-trophy"></i>
+                        Sports
+                    </span>
+                    <button class="expand-btn" data-announcement="2">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="announcement-expanded" id="expanded-2" style="display: none;">
+                    <div class="expanded-content">
+                        <h5>Available Events:</h5>
+                        <div class="events-grid">
+                            <div class="event-item">Track & Field</div>
+                            <div class="event-item">Basketball</div>
+                            <div class="event-item">Swimming</div>
+                            <div class="event-item">Table Tennis</div>
+                            <div class="event-item">Badminton</div>
+                            <div class="event-item">Chess</div>
+                        </div>
+                        <p><strong>Event Date:</strong> February 15-16, 2025</p>
+                        <p><strong>Registration Fee:</strong> ₹200 per event</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcement-card priority-normal">
+                <div class="announcement-header">
+                    <div class="announcement-badge general">
+                        <i class="fas fa-info-circle"></i>
+                        General
+                    </div>
+                    <span class="announcement-date">1 week ago</span>
+                </div>
+                <h4 class="announcement-title">Library Extended Hours</h4>
+                <p class="announcement-content">
+                    School library will now remain open until 7:00 PM on weekdays to support students' exam preparation.
+                </p>
+                <div class="announcement-footer">
+                    <span class="announcement-category">
+                        <i class="fas fa-book"></i>
+                        Library
+                    </span>
+                    <button class="expand-btn" data-announcement="3">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="announcement-expanded" id="expanded-3" style="display: none;">
+                    <div class="expanded-content">
+                        <h5>New Library Hours:</h5>
+                        <table class="hours-table">
+                            <tr><td>Monday - Friday:</td><td>8:00 AM - 7:00 PM</td></tr>
+                            <tr><td>Saturday:</td><td>9:00 AM - 5:00 PM</td></tr>
+                            <tr><td>Sunday:</td><td>Closed</td></tr>
+                        </table>
+                        <p><strong>Additional Services:</strong> Study rooms available for group discussions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcement-card priority-normal">
+                <div class="announcement-header">
+                    <div class="announcement-badge event">
+                        <i class="fas fa-calendar"></i>
+                        Event
+                    </div>
+                    <span class="announcement-date">2 weeks ago</span>
+                </div>
+                <h4 class="announcement-title">Science Exhibition 2025</h4>
+                <p class="announcement-content">
+                    Annual Science Exhibition showcasing student projects will be held on January 25th. Parents and students are invited.
+                </p>
+                <div class="announcement-footer">
+                    <span class="announcement-category">
+                        <i class="fas fa-flask"></i>
+                        Science
+                    </span>
+                    <button class="expand-btn" data-announcement="4">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="announcement-expanded" id="expanded-4" style="display: none;">
+                    <div class="expanded-content">
+                        <h5>Exhibition Details:</h5>
+                        <p><strong>Theme:</strong> "Science for Sustainable Future"</p>
+                        <p><strong>Timing:</strong> 10:00 AM - 4:00 PM</p>
+                        <p><strong>Venue:</strong> School Auditorium & Science Labs</p>
+                        <h6>Categories:</h6>
+                        <ul>
+                            <li>Physics Models & Experiments</li>
+                            <li>Chemistry Demonstrations</li>
+                            <li>Biology & Life Sciences</li>
+                            <li>Environmental Science Projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcement-card priority-low archived">
+                <div class="announcement-header">
+                    <div class="announcement-badge archived">
+                        <i class="fas fa-archive"></i>
+                        Archive
+                    </div>
+                    <span class="announcement-date">1 month ago</span>
+                </div>
+                <h4 class="announcement-title">Winter Holiday Schedule</h4>
+                <p class="announcement-content">
+                    School will remain closed from December 25th to January 10th for winter holidays. Emergency contact available.
+                </p>
+                <div class="announcement-footer">
+                    <span class="announcement-category">
+                        <i class="fas fa-calendar-times"></i>
+                        Holiday
+                    </span>
+                    <button class="expand-btn" data-announcement="5">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="announcement-expanded" id="expanded-5" style="display: none;">
+                    <div class="expanded-content">
+                        <p><strong>Emergency Contact:</strong> +91-9876543210</p>
+                        <p><strong>Office Reopening:</strong> January 8th, 2025</p>
+                        <p>Have a wonderful winter break!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcement-card priority-normal">
+                <div class="announcement-header">
+                    <div class="announcement-badge achievement">
+                        <i class="fas fa-medal"></i>
+                        Achievement
+                    </div>
+                    <span class="announcement-date">3 weeks ago</span>
+                </div>
+                <h4 class="announcement-title">Students Win Inter-School Competition</h4>
+                <p class="announcement-content">
+                    Congratulations to our debate team for winning first place in the Regional Inter-School Debate Competition.
+                </p>
+                <div class="announcement-footer">
+                    <span class="announcement-category">
+                        <i class="fas fa-users"></i>
+                        Achievement
+                    </span>
+                    <button class="expand-btn" data-announcement="6">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="announcement-expanded" id="expanded-6" style="display: none;">
+                    <div class="expanded-content">
+                        <h5>Winning Team Members:</h5>
+                        <ul>
+                            <li>Sarah Johnson (Class 10) - Best Speaker Award</li>
+                            <li>Rahul Patel (Class 11) - Team Captain</li>
+                            <li>Priya Singh (Class 9) - Rising Star</li>
+                        </ul>
+                        <p><strong>Topic:</strong> "Digital Education: Blessing or Curse?"</p>
+                        <p><strong>Prize:</strong> ₹10,000 + Trophy + Certificates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button id="load-more-btn" class="load-more-btn">
+                <i class="fas fa-plus-circle"></i>
+                Load More Announcements
+            </button>
+        </div>
+    </div>
+
+    <!-- Announcement Categories Filter -->
+    <div id="filter-dropdown" class="filter-dropdown" style="display: none;">
+        <div class="filter-options">
+            <button class="filter-option active" data-filter="all">
+                <i class="fas fa-th"></i> All Announcements
+            </button>
+            <button class="filter-option" data-filter="academic">
+                <i class="fas fa-graduation-cap"></i> Academic
+            </button>
+            <button class="filter-option" data-filter="sports">
+                <i class="fas fa-trophy"></i> Sports
+            </button>
+            <button class="filter-option" data-filter="events">
+                <i class="fas fa-calendar"></i> Events
+            </button>
+            <button class="filter-option" data-filter="achievements">
+                <i class="fas fa-medal"></i> Achievements
+            </button>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Announcements Section Styles */
+.announcements-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.announcements-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.announcements-header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.announcements-header h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.announcements-header h3 i {
+    font-size: 2rem;
+    animation: pulse 2s infinite;
+}
+
+.announcements-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.announcements-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.view-all-btn, .filter-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.view-all-btn:hover, .filter-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.announcements-container {
+    position: relative;
+    z-index: 2;
+}
+
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.announcement-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-left: 4px solid #667eea;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-card.priority-high {
+    border-left-color: #e74c3c;
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.05), rgba(255, 255, 255, 0.95));
+}
+
+.announcement-card.priority-medium {
+    border-left-color: #f39c12;
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.05), rgba(255, 255, 255, 0.95));
+}
+
+.announcement-card.priority-low.archived {
+    border-left-color: #95a5a6;
+    background: linear-gradient(135deg, rgba(149, 165, 166, 0.05), rgba(255, 255, 255, 0.95));
+    opacity: 0.8;
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.announcement-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.announcement-badge.urgent {
+    background: #e74c3c;
+    animation: glow-red 2s infinite alternate;
+}
+
+.announcement-badge.important {
+    background: #f39c12;
+}
+
+.announcement-badge.general {
+    background: #3498db;
+}
+
+.announcement-badge.event {
+    background: #9b59b6;
+}
+
+.announcement-badge.archived {
+    background: #95a5a6;
+}
+
+.announcement-badge.achievement {
+    background: #27ae60;
+}
+
+.announcement-date {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.announcement-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+.announcement-content {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.announcement-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.announcement-category {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #667eea;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    color: #667eea;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.expand-btn:hover {
+    background: rgba(102, 126, 234, 0.1);
+    transform: rotate(180deg);
+}
+
+.announcement-expanded {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #f8f9fa;
+    animation: slideDown 0.3s ease;
+}
+
+.expanded-content h5 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.expanded-content h6 {
+    color: #666;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.expanded-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.expanded-content ul li {
+    padding: 0.3rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.expanded-content ul li::before {
+    content: '•';
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.event-item {
+    background: #667eea;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hours-table {
+    width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.hours-table td:first-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.load-more-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.load-more-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 auto;
+}
+
+.load-more-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.filter-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-option {
+    background: none;
+    border: none;
+    padding: 0.8rem;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.filter-option:hover, .filter-option.active {
+    background: #667eea;
+    color: white;
+}
+
+/* Animations */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes glow-red {
+    0% { box-shadow: 0 0 5px rgba(231, 76, 60, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(231, 76, 60, 0.8); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcements-section {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+        border-radius: 15px;
+    }
+    
+    .announcements-header h3 {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .announcements-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .announcement-card {
+        padding: 1.2rem;
+    }
+    
+    .announcements-controls {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+    
+    .view-all-btn, .filter-btn {
+        width: 200px;
+        text-align: center;
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .announcements-header h3 {
+        font-size: 1.6rem;
+    }
+    
+    .announcement-title {
+        font-size: 1.1rem;
+    }
+    
+    .announcement-footer {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .announcement-card {
+        border: 2px solid #000;
+        background: white;
+    }
+    
+    .announcement-badge {
+        border: 1px solid #000;
+    }
+    
+    .announcement-title, .expanded-content h5 {
+        color: #000;
+    }
+    
+    .announcement-content, .announcement-category {
+        color: #333;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .announcement-card, .expand-btn, .load-more-btn {
+        transition: none;
+    }
+    
+    .announcement-badge.urgent {
+        animation: none;
+    }
+    
+    .announcement-expanded {
+        animation: none;
+    }
+}
+</style>
+
+<script>
+// Announcements Section JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Expand/Collapse functionality
+    const expandBtns = document.querySelectorAll('.expand-btn');
+    expandBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const announcementId = this.getAttribute('data-announcement');
+            const expandedContent = document.getElementById(`expanded-${announcementId}`);
+            const icon = this.querySelector('i');
+            
+            if (expandedContent.style.display === 'none' || !expandedContent.style.display) {
+                expandedContent.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+                this.setAttribute('aria-expanded', 'true');
+            } else {
+                expandedContent.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+                this.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
+    // Filter functionality
+    const filterBtn = document.getElementById('filter-btn');
+    const filterDropdown = document.getElementById('filter-dropdown');
+    const filterOptions = document.querySelectorAll('.filter-option');
+    
+    if (filterBtn && filterDropdown) {
+        filterBtn.addEventListener('click', function() {
+            filterDropdown.style.display = filterDropdown.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!filterBtn.contains(event.target) && !filterDropdown.contains(event.target)) {
+                filterDropdown.style.display = 'none';
+            }
+        });
+
+        // Filter options
+        filterOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active state
+                filterOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter announcements
+                const cards = document.querySelectorAll('.announcement-card');
+                cards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const category = card.querySelector('.announcement-category i').className;
+                        const shouldShow = checkCategoryMatch(category, filter);
+                        card.style.display = shouldShow ? 'block' : 'none';
+                    }
+                });
+                
+                filterDropdown.style.display = 'none';
+            });
+        });
+    }
+
+    // Load more functionality
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // In a real implementation, this would fetch more data
+            // For demo purposes, we'll show hidden cards
+            const hiddenCards = document.querySelectorAll('.announcement-card.archived');
+            hiddenCards.forEach(card => {
+                card.style.display = 'block';
+                card.classList.remove('archived');
+            });
+            
+            // Hide the load more button after showing all
+            this.style.display = 'none';
+        });
+    }
+
+    // View All button
+    const viewAllBtn = document.getElementById('view-all-btn');
+    if (viewAllBtn) {
+        viewAllBtn.addEventListener('click', function() {
+            // Expand all announcements
+            const allExpanded = document.querySelectorAll('.announcement-expanded');
+            const allExpandBtns = document.querySelectorAll('.expand-btn');
+            
+            allExpanded.forEach((content, index) => {
+                content.style.display = 'block';
+                allExpandBtns[index].querySelector('i').style.transform = 'rotate(180deg)';
+                allExpandBtns[index].setAttribute('aria-expanded', 'true');
+            });
+        });
+    }
+
+    // Helper function to check category match
+    function checkCategoryMatch(iconClass, filter) {
+        const categoryMap = {
+            'academic': 'fa-graduation-cap',
+            'sports': 'fa-trophy',
+            'events': 'fa-calendar',
+            'achievements': 'fa-medal'
+        };
+        
+        return iconClass.includes(categoryMap[filter]);
+    }
+
+    // Auto-hide archived announcements initially
+    setTimeout(() => {
+        const archivedCards = document.querySelectorAll('.announcement-card.archived');
+        archivedCards.forEach(card => {
+            card.style.display = 'none';
+        });
+    }, 1000);
+
+    // Add accessibility attributes
+    expandBtns.forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Expand announcement details');
+    });
+});
+</script>
 
     <!-- Booking Modal -->
     <div id="booking-modal" class="modal-overlay">
@@ -296,3 +1142,4 @@
     <script src="home.js"></script>
 </body>
 </html>
+
